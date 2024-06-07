@@ -1,0 +1,502 @@
+#upbtn {
+	display: none;
+}
+
+.about_container {
+	display: flex;
+}
+
+.wanna_help {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nu_che_teper_delat {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#container_one {
+	background-image: url(../img/background1.png);
+}
+
+#container_three {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.spisok_zalov {
+	position: relative;
+}
+
+.spisok_zalov_mobile {
+	position: relative;
+	text-align: center;
+	background-color: #333;
+}
+
+.spisok_zalov a {
+	margin-right: 0px !important;
+}
+
+.spisok_zalov:hover .sub_menu {
+	transform: scaleY(1);
+}
+
+.header_link_email {
+	border-bottom: 2px solid #F8BB3B;
+}
+
+.header_link, .header_link_email {
+	font-size: 0.9em;
+	line-height: 25px;
+}
+
+.description {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	line-height: 155%;
+	text-decoration-line: underline;
+	letter-spacing: 1px;
+	color: #F8BB3B;
+}
+
+.title_and_logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+#zal1 {
+	background-image: url(../img/zavod_crop.jpg);
+	background-position: 43% 57%;
+	background-size: 190%;
+}
+
+#zal2 {
+	background-image: url(../img/versty_img.jpg);
+	background-position: 57% 100%;
+	background-size: 200%;
+}
+
+#zal3 {
+	background-image: url(../img/school.jpg);
+	background-position: 19% 40%;
+	background-size: 250%;
+}
+
+#zal4 {
+	background-image: url(../img/cerkov.jpg);
+	background-position: 28% 25%;
+	background-size: 250%;
+}
+
+.cards {
+	margin-top: 30px;
+	overflow-x: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.zal_card {
+	background: #2C2F33;
+	box-shadow: -5px -5px 15px rgba(36, 44, 56, 0.5), 5px 5px 15px #2D3035;
+	border-radius: 20px;
+	float: left;
+	position: relative;
+}
+
+.zal_card:hover {
+	filter: brightness(1);
+	transition: 0.5s;
+	transform: scale(0.95);
+}
+
+.card_title {
+	font-size: 0.8em;
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.alert {
+	font-size: 0.9vw;
+}
+
+.button_corner {
+	position: absolute;
+	right: 2vw;
+  bottom: 2vw;
+}
+
+.name_surname {
+	display: flex;
+}
+
+.input_wrapper {
+	width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.input_file {
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  width: 240px;
+  height: 50px;
+}
+
+.add_material_icon {
+	margin-right: 10px;
+	width: 15px;
+}
+
+.input_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	border-radius: 100px;
+	width: 240px;
+  height: 50px;
+}
+
+.name {
+	background: url(../img/name_icon.svg) no-repeat 15px 13px;
+}
+
+.text_area {
+	background: url(../img/text_area_icon.svg) no-repeat 15px 18px;
+}
+
+.textInput {
+	border: 0px solid red;
+	border-radius: 20px;
+	padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 184px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+.message {
+	min-height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.set_name_alert {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0.85em;
+}
+
+.input_label, .textInput {
+  background-color: #2C2F33;
+  box-shadow: -5px -5px 15px #3B4451, 5px 5px 15px #000000;
+}
+
+.sentForm {
+	background: #F8BB3B;
+	box-shadow: -5px -5px 15px #3B4451, 5px 5px 15px #000000;
+	border-radius: 20px;
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	border: 0px solid red;
+	cursor: pointer;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.input_label, .textInput, .set_name_alert, label {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.textInput::placeholder {
+	color: #fff;
+}
+
+.select {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.select label {
+	margin-right: 20px;
+}
+
+.label_text {
+	margin-left: 7px;
+}
+
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+ 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #2C2F33;
+    background-color: #2C2F33;
+    box-shadow: -3px -3px 5px #3b4451, 2px 2px 5px #000000;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #f8bb3b;
+  background-color: #f8bb3b;
+  box-shadow: -3px -3px 5px #3b4451, 2px 2px 5px #000000;
+}
+
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + label:after {
+  left: 7px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+input[type="radio"]:not(:checked) + label:after {
+  left: 7px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background: #2C2F33;
+	box-shadow: inset -5px -5px 5px #3B4451, inset 3px 3px 5px #000000;
+}
+
+@media screen and (min-width: 769px) {
+	.container {
+		padding-left: 15vw;
+		padding-right: 15vw;
+	}
+
+	.logo { display: block; }
+
+	.title { 
+		font-size: 2.5em;
+		line-height: 50px;
+	}
+
+	.description { font-size: 1.3em; }
+}
+
+@media screen and (max-width: 1285px) and (min-width: 468px) {
+	.zal_card { margin-right: 30px; }
+}
+
+@media screen and (max-width: 768px) {
+	.title_two { text-align: center; }
+	.logo { display: none; }
+
+	.container {
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
+
+	#container_three {
+		align-items: center;
+	}
+
+	.title { font-size: 1.5em; }
+
+	.description { font-size: 0.65em; }
+}
+
+@media screen and (max-width: 467px) {
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	} 
+
+	.zal_card {
+		height: 190px;
+		width: 260px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 468px) {
+	.zal_card {
+		min-height: 270px;
+		min-width: 202.5px;
+		max-height: 270px;
+		max-width: 202.5px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 512px) {
+	.header_button {
+		display: none;
+	}
+
+	.name_surname {
+		flex-direction: row;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.name_surname {
+		flex-direction: column;
+	}
+
+	form {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.set_name_alert, .select, .sentForm, .total {
+		text-align: center;
+	}
+
+	.input_wrapper {
+		 justify-content: center;
+	}
+
+	.formItem, .name_surname {
+		width: 100%;
+	}
+
+	.textInput {
+		width: calc(100% - 58px);
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 577px) {
+	.message {
+		width: 480px;
+		margin-top: 40px;
+		margin-bottom: 40px; 
+	}
+
+	.name_margin {
+		margin-right: 50px;
+	}
+
+	.input_wrapper {
+	 justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 513px) {
+	.header_link {
+		display: none;
+	}
+
+	.name_surname {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.about_block {
+		width: 50%;
+		margin: 15px;
+	}
+
+	.about_container {
+		flex-direction: row;
+	}
+
+	.alert {
+		position: absolute;
+		right: 40px;
+		top: 40px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about_block {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.about_container {
+		flex-direction: column;
+	}
+
+	.button_corner {
+		display: none;
+	}
+
+	.alert {
+		display: none;
+	}
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: #2C2F33;
+  box-shadow: -5px -5px 5px #3B4451;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #F8BB3B;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px rgba(136, 160, 183, 0.35);
+}

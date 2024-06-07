@@ -1,0 +1,215 @@
+/* Заголовок */
+
+@media screen and (min-width: 650px) {
+	.big_title {
+		font-size: 1.75em; 
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.big_title { font-size: 1.35em; }
+}
+
+.big_title { margin-bottom: 30px; }
+
+/* Читать далее */
+
+.read_more_state {
+  display: none;
+}
+
+.read_more_target {
+  opacity: 0;
+  font-size: 0;
+  transition: 0.3s ease;
+}
+
+.read_more_state:checked ~ .read_more_wrap .read_more_target {
+  opacity: 1;
+  font-size: 16px;
+  max-height: 999em;
+}
+
+.read_more_state ~ .read_more_trigger:before {
+  content: 'Читать подробнее...';
+}
+
+.read_more_state:checked ~ .read_more_trigger:before {
+  content: 'Скрыть';
+}
+
+.read_more_state ~ .read_more_trigger:before, .read_more_state:checked ~ .read_more_trigger:before {
+	font-size: 16px;
+	font-family: 'Open Sans';
+}
+
+.read_more_trigger {
+  cursor: pointer;
+  color: #f8bb3b;
+  font-weight: bold;
+}
+
+.read_more_trigger:hover {
+	text-decoration: underline;
+}
+
+/* Карточки 3*4 */
+
+.card_wrap {
+	display: grid;
+	justify-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 1300px) {
+	.card_wrap {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1299px) {
+	.card_wrap {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 670px) and (max-width: 1021px) {
+	.card_wrap {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.card_wrap {
+		grid-template-columns: 1fr;
+	}
+}
+
+.card_link {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.card {
+	background: linear-gradient(180deg, #F8BB3B 0%, #F3D597 25%, #EEEEEE 50%, #ECC0A9 75%, #EB966A 100%);	box-shadow: inset 0px -75px 40px rgba(0, 0, 0, 0.7);
+	filter: drop-shadow(-5px -5px 15px #3B4451) drop-shadow(5px 5px 15px #000000);
+	position: relative;
+	border-radius: 20px;
+}
+
+@media screen and (min-width: 1300px) {
+	.card {
+		height: 20vw;
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 1301px) and (min-width: 1021px) {
+	.card {
+		height: 28vw;
+		width: 21vw;
+	}
+}
+
+@media screen and (max-width: 1021px) and (min-width: 670px) {
+	.card {
+		height: 320px;
+		width: 240px;
+	}
+}
+
+@media screen and (max-width: 669px) and (min-width: 330px) {
+	.card {
+		height: 400px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 329px) {
+	.card {
+		height: 360px;
+		width: 270px;
+	}
+}
+
+/* Стили для внутренностей карточки */
+
+.card_date {
+	position: absolute;
+	display: none;
+	background: #fff;
+	box-shadow: 5px 5px 15px #000000;
+	border-radius: 20px;
+	top: -10px;
+	right: -10px;
+	padding: 5px 10px 5px 10px;
+}
+
+.card_date_text {
+	margin-left: 5px;
+	display: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Opes Sans", sans-serif;
+	color: #333;
+}
+
+.card_title {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-bottom: 8px;
+	font-family: "Opes Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #EEEEEE;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000;
+}
+
+.card_preview {
+	width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+	border-radius: 20px;
+}
+
+.card_id {
+	background: #EEEEEE;
+	box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5), 2px 2px 6px #BECDE2;
+	border-radius: 20px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 10px 5px 10px;
+	font-size: 14px;
+  line-height: 20px;
+  font-family: "Opes Sans", sans-serif;
+  color: #333;
+  font-weight: bold;
+}
+
+.hr {
+	display: flex;
+	justify-content: center;
+}
+
+hr {
+	width: 90%;
+	border: none;
+	height: 2px;
+	margin-bottom: 20px;
+	margin-top: -20px;
+	background-color: #eee;
+}
